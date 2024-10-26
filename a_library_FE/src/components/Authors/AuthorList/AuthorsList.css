@@ -1,0 +1,175 @@
+.author-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.author-card {
+    background: var(--a);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.author-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.author-info {
+    margin-bottom: 1rem;
+}
+
+.author-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--w2);
+    margin: 0 0 0.5rem;
+}
+
+.author-bio {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+}
+
+.author-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.edit-btn {
+    background-color: var(--b);
+    /* Green */
+    color: white;
+}
+
+.delete-btn {
+    background-color: var(--b);
+    /* Red */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: var(--b1);
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+.author-edit-mode {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    border: 1px solid var(--a);
+    outline: none;
+    border-radius: 4px;
+    background-color: var(--b);
+    color: var(--w2);
+}
+
+.save-btn {
+    background-color: var(--b);
+    color: white;
+}
+
+.cancel-btn {
+    background-color: var(--b);
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+.cancel-btn:hover {
+    background-color: var(--c);
+}
+
+.delete-confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .confirmation-box {
+    background: var(--b);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .confirmation-box p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--w2);
+  }
+  
+  .confirmation-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .yes-btn {
+    background-color: var(--a);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .no-btn {
+    background-color: var(--a);
+    color: var(--w2);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .yes-btn:hover {
+    background-color: var(--d);
+  }
+  
+  .no-btn:hover {
+    background-color: var(--b1);
+  }
+  

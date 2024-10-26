@@ -1,0 +1,17 @@
+.books-container{
+    background-color: brown;
+    color: var(--w1);
+    height: 100vh;
+    /* background-image: url(../../../public/library1.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 250px 70px 250px;
+}
+
+
+
+@media (max-width:768px) {
+    .books-container{
+        padding: 70px 50px 70px 50px;    
+    }
+}

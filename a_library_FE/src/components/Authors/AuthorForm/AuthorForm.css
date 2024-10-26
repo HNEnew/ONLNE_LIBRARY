@@ -1,0 +1,51 @@
+.authorform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.form-addauthor {
+    max-width: 1000px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px solid rgb(223, 222, 222);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* color: var(--w1); */
+    background-color: var(--b);
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+form p {
+    margin: 0;
+}
+
+.authorform-container button {
+    color: var(--w1);
+    background-color: var(--a);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+}
+
+.formInput {
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+.authorform-inputdiv{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
